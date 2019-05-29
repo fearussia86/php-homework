@@ -173,22 +173,17 @@ echo "<br>";
 <div class="">
   <?php
 
-$comment = "<form>
+//php код сразу вставляем в html теги
 
-<p><textarea name=\"comment\" id=\"comment\" cols=\"48\" rows=\"8\"> </textarea>
-</p>
-<p><input name=\"submit\" type=\"submit\" id=\"submit\" value=\"Отправить\" />
-</p>
-</form>";
+if ($isAuth) {
 
-if ($isAuth == true) {
-
-echo $comment;
+//Здесь выводим html теги комментариев
 
 } else {
-  echo "Вы не авторизованы на сайте, пожалуйста, войдите на сайт, используя Ваш логин и пароль";
+  //Здесь выводим html теги с предложением того, что пользователь не авторизован.
 }
 
+//далее используем конструкцию endif;
   ?>
 
 
