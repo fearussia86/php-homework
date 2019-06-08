@@ -1,1 +1,3 @@
-https://vk.com/im
+https://php.ru/manual/function.file-put-contents.html
+https://webgyry.info/peremennaya-php-isset;webgyry.info/slkthrn;2019-06-09
+69daaa382b319562393deb17993046c8cf078c42

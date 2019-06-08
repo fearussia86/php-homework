@@ -1,0 +1,5 @@
+DirectoryIndex index.php #Всегда загружать сайт со стартового файла index.php
+Options = Indexes #Разрешает показывать список файлов в директории без индексного файла
+php_flag register_globals off #Команда безопасности, отключает регистрацию данных, приходящих в глобальные массивы POST, GET
+RewriteEngine On #Опция включает модуль преобразования url адресов, редиректорв и т.д.
+RewriteRule ^-(.*) /redirect.php?key=$1 [L]
