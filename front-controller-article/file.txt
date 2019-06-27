@@ -1,0 +1,44 @@
+class User {} в файле
+
+class User {} в подключенной библиотеке
+
+Нам надо подключить в файле index.php оба класса. 
+
+require "project/User.php";
+require "lib/User.php";
+
+
+$user = new User();
+
+Мы получаем в такой ситуации ошибку, дублирование кода. 
+Чтобы не было такой проблемы, в самом начале файла подключаем namespace. 
+
+Как принято формировать namespace? 
+
+Оно всегда подключается вверху файла. 
+
+namespace Company\FrontController\Controllers;
+
+class User {} класс User подключаемый с файла. 
+
+
+namespace Lib\Prog\Data;
+
+class User {} класс User подключаемый с библиотеки. 
+
+
+use Company\FrontController\Controllers\User;
+use Lib\Proj\Data\User as LibUser;
+
+Чтобы не подключать постоянно require и просто чтобы подключались файлы, когда мы устанавливаем
+namespace - вот для этого нужен composer. 
+Это называется автозагрузкой классов. 
+
+
+Picture
+id
+title
+description
+img
+YearCreated
+

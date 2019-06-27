@@ -1,0 +1,22 @@
+{
+    "name": "web/FrontController",
+    "description": "This is mvc project in IFMO",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yurii",
+            "email": "fearussia86@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    
+    
+    
+    "autoload":{
+         "psr-4":{
+             "Web\\FrontController\\": "src/" 
+         }
+    }
+}
